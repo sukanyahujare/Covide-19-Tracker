@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <!-- CSS Center = cssc;01 -->
+  <style>
+    *{
+      background-color: black;
+      color: white;
+    }
+    body {
+      width: 90%;
+      height: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    table {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    td,
+    th {
+      border: 2px solid #999;
+      padding: 0.5rem;
+    }
+
+    h2{
+      color: antiquewhite;
+      text-align: center;
+      font-size: 30px;
+    }
+
+.search{
+  width: 30%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: 1px solid white;
+  box-sizing: border-box;
+  align-items: center;
+}
+#btnsearch, #btnClear{
+background-color: antiquewhite;
+color: black;
+padding: 10px;
+border: 2px solid gray;
+box-sizing: border-box;
+}
+</style>
+<title>Covid-19 Status</title>
+</head>
+
+<body>
+<h2>Covid-19 Status </h2>
+<hr>
+<div>
+<input type="text" id="search" class="search" placeholder="Search Country Name">
+<input type="button" id="btnsearch" class="w3-button w3-white"  onclick="searchData()"  value="Search">
+<input type="button" id="btnClear" class="w3-button w3-white"  onclick="clearFilter()"  value="Clear">
+<table id="users"></table>
+</div>
+
+<hr>
+
+<script src="covid.js"></script>
+</body>
+
+</html>
